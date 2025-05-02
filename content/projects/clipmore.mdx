@@ -1,0 +1,192 @@
+---
+title: ClipMore
+description: A Discord bot that tracks social media post engagements and manages campaign payouts based on view counts. Coupled with a react dashboard for efficient campaign management and client facing tracking.
+date: 2024-03-21
+website: https://discord.gg/NSYvejc233
+github: https://discord.gg/NSYvejc233
+tags:
+  - label: Express
+  - label: Discord.js
+  - label: PostgreSQL
+  - label: Analytics
+  - label: Automation
+  - label: React
+---
+
+# ClipMore
+
+ClipMore is an innovative Discord bot designed to streamline social media campaign management and creator compensation. The bot allows users to submit social media posts, automatically tracks engagement metrics across platforms, and provides campaign managers with tools to efficiently manage payouts based on view counts.
+
+## Project Overview
+
+<figure>
+  <img src="/images/projects/clipmore/dashboard-hero.jpg" alt="ClipMore Dashboard" />
+  <figcaption>Main dashboard showing campaign tracking, engagement metrics, and payout management interface</figcaption>
+</figure>
+
+## Key Features
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### Social Media Tracking
+    - Automated engagement tracking across platforms
+    - Real-time view count monitoring
+    - Post submission and verification
+    - Multi-platform support
+  </div>
+  
+</div>
+
+<figure className="md:col-span-2">
+    <img src="/images/projects/clipmore/tracking.jpg" alt="Social Media Tracking" />
+    <figcaption>Social media tracking interface showing post engagement metrics</figcaption>
+  </figure>
+
+<div className="grid grid-cols-1 items-center ">
+  <div style={{fontSize: "0.95rem"}}>
+    ### Discord Bot Integration
+    - Automated campaign notifications
+    - Post submission commands
+    - Real-time status updates
+    - Custom bot commands
+  </div>
+  <figure>
+    <img src="/images/projects/clipmore/discord.jpg" alt="Discord Bot Interface" />
+    <figcaption>Discord bot interface showing campaign commands and notifications</figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### Campaign Management
+    - Automated payout calculations
+    - Campaign status tracking
+    - Creator performance metrics
+    - Payment history
+  </div>
+  
+</div>
+<figure>
+    <img src="/images/projects/clipmore/campaign.jpg" alt="Campaign Management" />
+    <figcaption>Campaign management dashboard with payout tracking and creator metrics</figcaption>
+  </figure>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### Analytics Dashboard
+    - Real-time engagement metrics
+    - Historical performance data
+    - Custom report generation
+    - Exportable analytics
+  </div>
+  
+</div>
+<figure>
+    <img src="/images/projects/clipmore/analytics.jpg" alt="Analytics Dashboard" />
+    <figcaption>Analytics dashboard showing engagement trends and performance metrics</figcaption>
+  </figure>
+
+## Technical Architecture
+
+<figure>
+  <img src="/images/projects/clipmore/arch.jpg" alt="System Architecture" />
+  <figcaption>System architecture showing Discord bot, tracking system, and dashboard integration</figcaption>
+  
+</figure>
+
+[Full image of architecture](/images/projects/clipmore/arch.jpg)
+### Technology Stack
+
+#### Backend Stack
+```typescript
+// Runtime Environment
+Node.js
+Express.js Framework
+
+// Database
+PostgreSQL with Sequelize ORM
+
+// Bot Integration
+Discord.js for bot functionality
+
+// Frontend
+React with TypeScript
+```
+
+#### Key Dependencies
+```json
+{
+  "express": "^4.18.2",
+  "discord.js": "^14.18.0",
+  "sequelize": "^6.37.6",
+  "react": "^18.2.0",
+  "typescript": "^5.0.0"
+}
+```
+
+## Project Structure
+
+```bash
+clipmore/
+├── bot/                # Discord bot implementation
+├── server/            # Express backend
+├── client/            # React frontend
+├── shared/            # Shared types and utilities
+├── config/            # Configuration files
+└── tests/             # Test suites
+```
+
+## Performance Optimizations
+
+- Efficient database queries for engagement tracking
+- Caching for frequently accessed metrics
+- Optimized Discord bot response times
+- Efficient social media API integration
+- Rate limiting for API endpoints
+
+## Development Setup
+
+### Prerequisites
+- Node.js
+- PostgreSQL
+- Discord Bot Token
+- Social Media API Keys
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/clipmore.git
+cd clipmore
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Start development servers
+npm run dev
+```
+
+## Future Enhancements
+
+### Platform Integration
+- Additional social media platforms
+- Enhanced analytics capabilities
+- Automated payout system integration
+
+### Bot Features
+- Advanced command system
+- Custom notification rules
+- Enhanced moderation tools
+
+### Dashboard Improvements
+- Advanced analytics visualization
+- Custom report builder
+- Enhanced campaign management tools
+
+### Security
+- Enhanced authentication system
+- API key management
+- Audit logging 

@@ -1,0 +1,277 @@
+---
+title: Request.me
+description: A comprehensive request management system that leverages AI to streamline and automate request processing workflows.
+date: 2024-03-20
+website: https://www.request-app.me/
+github: https://github.com/daniel1lima/request_web
+tags:
+  - label: TypeScript
+  - label: React
+  - label: Node.js
+  - label: PostgreSQL
+  - label: REST API
+---
+
+# Request.me
+
+Request.me is an advanced request management system designed to revolutionize how organizations handle incoming requests. Built with a modern tech stack, it offers real-time analytics using websockets and modern payouts using Stripe's developer API.
+
+## Project Overview
+
+<figure>
+  <img
+    src="/images/projects/request/dashboard.jpg"
+    alt="Request.me Dashboard"
+  />
+  <figcaption>
+    The main dashboard showing real-time request analytics and management
+    interface
+  </figcaption>
+</figure>
+
+## Key Features
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 1. Payment Integration 
+    - Seamless Stripe integration 
+    - Automated payout processing 
+    - Transaction history and reporting 
+    - Multi-currency support
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/payment.jpg"
+      alt="Stripe Payment"
+      style={{
+        width: '100%',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      The main client facing page utilizing the <a href="https://docs.stripe.com/elements/express-checkout-element" target="_blank" rel="noopener noreferrer">express checkout stripe component</a>
+    </figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 2. Real-time Request Processing 
+    - Instant request submission and processing 
+    - Live status updates using WebSocket technology 
+    - Real-time analytics dashboard 
+    - Automated request categorization
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/websocket.jpg"
+      alt="Stripe Payment"
+      style={{
+        width: '100%',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      Websocket status displaying on the admin dashboard
+    </figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 3. Accepted Request Tracking
+    - Real-time queue visualization for upcoming songs
+    - Live updates when requests are accepted or played
+    - Song history tracking for event attendees
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/tracking.jpg"
+      alt="Request Tracking"
+      style={{
+        width: '100%',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      Public-facing request queue showing upcoming songs and currently playing track
+    </figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 3. Multi-DJ Management
+    - Create and manage multiple DJs for a single event
+    - Seamless DJ handoffs with real-time status updates
+    - Dynamic DJ rotation with customizable schedules
+    - Individual request queues for each performing DJ
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/dj-management.jpg"
+      alt="DJ Management"
+      style={{
+        width: '100%',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      Admin interface showing DJ management panel with current active DJ and rotation controls
+    </figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 4. SMS Notification System
+    - Twilio SMS integration for request updates
+    - Text message confirmations when requests are accepted
+    - SMS-based request cancellation functionality
+    - Automated reminders when a request is about to play
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/sms-notification.jpg"
+      alt="SMS Notifications"
+      style={{
+        width: 'auto',
+        height: 'auto',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <img
+      src="/images/projects/request/phone.jpg"
+      alt="SMS Notifications"
+      style={{
+        width: 'auto',
+        height: 'auto',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      Example of SMS notifications sent to attendees with request status updates and cancellation options
+    </figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 5. Spotify API Integration
+    - Real-time song search across Spotify's vast library
+    - Rich metadata including album art, artist info, and song duration
+    - Audio previews for DJs to evaluate requests
+    - Smart search with autocomplete and filtering options
+  </div>
+  <figure>
+    <img
+      src="/images/projects/request/spot.jpg"
+      alt="Spotify Search Integration"
+      style={{
+        width: '100%',
+        borderRadius: '0.5rem'
+      }}
+    />
+    <figcaption>
+      Song search interface powered by Spotify API showing search results with album artwork and track details
+    </figcaption>
+  </figure>
+</div>
+
+## Technical Architecture
+
+<figure>
+  <img
+    src="/images/projects/request/arch.jpg"
+    alt="System Architecture"
+  />
+  <figcaption>
+    High-level overview of the Request.me system architecture
+  </figcaption>
+</figure>
+
+### Frontend Stack
+
+```typescript
+// Core Technologies
+- React 18
+- TypeScript
+- Tailwind CSS
+- WebSocket for real-time updates
+- React Query for data fetching
+```
+
+### Backend Stack
+
+```typescript
+// Server Technologies
+- Node.js
+- Express
+- PostgreSQL
+- WebSocket Server
+- Stripe API Integration
+- Spotify API Integration
+```
+
+## Project Structure
+
+The project follows a monorepo structure:
+
+```
+request_web/
+├── client/           # Frontend React application
+├── server/           # Backend Express server
+├── shared/           # Shared types and utilities
+└── docs/            # Project documentation
+```
+
+
+## Security Features
+
+- JWT authentication
+- Role-based access control
+- Rate limiting
+- Data encryption
+- Secure WebSocket connections
+
+## Performance Optimizations
+
+- Database indexing
+- Query optimization
+- Caching strategies
+- Load balancing
+- CDN integration
+
+## Development Setup
+
+1. **Prerequisites**
+
+   - Node.js 18+
+   - PostgreSQL 15+
+   - Bun package manager
+
+2. **Installation**
+
+```bash
+# Clone the repository
+git clone https://github.com/daniel1lima/request_web.git
+
+# Install dependencies
+bun install:all
+
+# Set up environment variables
+cp .env.example .env
+
+# Start development servers
+bun dev
+```
+
+## Future Roadmap
+
+- Enhanced AI capabilities
+- Soundcloud Support
+- Native integration with [Serrato](https://serato.com/) or [RekordBox](https://rekordbox.com/en/)
+- Mobile application
+- Additional payment providers
+- Advanced analytics
+- Custom workflow builder

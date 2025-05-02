@@ -1,0 +1,151 @@
+---
+title: Personal Portfolio & Blog
+description: A modern, responsive portfolio website built with Next.js 14, featuring a blog system with MDX support, dark mode, and interactive UI components.
+date: 2024-03-21
+website: https://danielbalima.com
+github: https://github.com/daniel1lima/daniel-portfolio
+tags:
+  - label: Next.js
+  - label: TypeScript
+  - label: MDX
+  - label: Tailwind CSS
+  - label: Framer Motion
+---
+
+# Personal Portfolio & Blog
+
+A modern, responsive portfolio website showcasing my projects and thoughts through an interactive blog system. Built with Next.js 14 and featuring a beautiful dark mode implementation, this project demonstrates advanced web development techniques and best practices.
+
+## Project Overview
+
+<figure>
+  <img src="/images/projects/portfolio/hero.jpg" alt="Portfolio Hero Section" />
+  <figcaption>The hero section featuring a dynamic gradient animation and interactive social links</figcaption>
+</figure>
+
+## Key Features
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 1. Modern Blog System
+    - MDX support for rich content
+    - Syntax highlighting for code blocks
+    - Responsive images with blur placeholders
+    - Table of contents generation
+    - Reading time estimation
+  </div>
+  <figure>
+    <img src="/images/projects/portfolio/blog.jpg" alt="Blog Post Example" />
+    <figcaption>A sample blog post showcasing MDX features and syntax highlighting</figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 2. Interactive UI Components
+    - Smooth page transitions
+    - Scroll-triggered animations
+    - Interactive project cards
+    - Dynamic gradient effects
+    - Responsive navigation
+  </div>
+  <figure>
+    <video src="/images/projects/portfolio/interactions.mp4" alt="Interactive UI Elements" autoPlay loop muted playsInline />
+    <figcaption>Interactive UI elements with smooth animations and transitions</figcaption>
+  </figure>
+</div>
+
+<div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+  <div>
+    ### 3. Project Showcase
+    - Detailed project pages
+    - Technology stack tags
+    - Live demo links
+    - GitHub repository integration
+    - Responsive image galleries
+  </div>
+  <figure>
+    <img src="/images/projects/portfolio/projects.jpg" alt="Project Showcase" />
+    <figcaption>Interactive project cards with hover effects and detailed information</figcaption>
+  </figure>
+</div>
+
+## Technical Architecture
+
+<figure>
+  <img src="/images/projects/portfolio/architecture.jpg" alt="System Architecture" />
+  <figcaption>High-level overview of the portfolio's technical architecture</figcaption>
+</figure>
+
+### Frontend Stack
+```typescript
+// Core Technologies
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- MDX
+- Shadcn/ui Components
+```
+
+### Key Dependencies
+```typescript
+// Main Dependencies
+- next-mdx-remote    // MDX processing
+- rehype-highlight   // Code syntax highlighting
+- rehype-slug        // Heading anchors
+- remark-gfm        // GitHub Flavored Markdown
+- framer-motion     // Animations
+- lucide-react     // Icons
+```
+
+## Project Structure
+
+```
+daniel-portfolio/
+├── app/              # Next.js app directory
+├── components/       # React components
+├── content/         # MDX content
+│   ├── blog/       # Blog posts
+│   └── projects/   # Project showcases
+├── lib/            # Utility functions
+├── public/         # Static assets
+└── styles/         # Global styles
+```
+
+## Performance Optimizations
+
+- Image optimization with Next.js
+- MDX content caching
+- Code splitting
+- Lazy loading components
+- Font optimization
+- Static page generation
+
+## Development Setup
+
+1. **Prerequisites**
+   - Node.js 18+
+   - pnpm package manager
+
+2. **Installation**
+```bash
+# Clone the repository
+git clone https://github.com/daniel1lima/daniel-portfolio.git
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+```
+
+## Future Enhancements
+
+- Blog search functionality
+- Project filtering system
+- Newsletter integration
+- Comment system
+- Analytics dashboard
+- RSS feed support
+- Internationalization 
