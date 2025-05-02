@@ -31,7 +31,7 @@ A modern, responsive portfolio website showcasing projects and thoughts through 
 - Dynamic gradient effects
 - Responsive navigation
 
-[![Interactive UI Elements](https://img.shields.io/badge/🎥_Watch_Demo-Video_Showcase-blue?style=for-the-badge)](https://danielbalima.com/images/projects/portfolio/interactions.mp4)
+[![Interactive UI Elements](https://img.shields.io/badge/🎥_Watch_Demo-Video_Showcase-blue?style=for-the-badge)](https://portfolio.daniellima.info/images/projects/portfolio/interactions.mp4)
 *Interactive UI elements with smooth animations and transitions*
 
 ### 3. Project Showcase
