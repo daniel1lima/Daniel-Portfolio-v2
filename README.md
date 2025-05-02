@@ -1,101 +1,106 @@
-<p align="center">
-  <img alt="" src="/.github/assets/cover.png" />
-</p>
+# Daniel Balima's Portfolio
 
-<h1 align="center">
-  shadcn-portfolio
-</h1>
+A modern, responsive portfolio website showcasing projects and thoughts through an interactive blog system. Built with Next.js 14 and featuring a beautiful dark mode implementation, this project demonstrates advanced web development techniques and best practices.
 
-<p align="center">
-  <a aria-label="Framework" href="https://nextjs.org">
-    <img alt="" src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000">
-  </a>
-  <img alt="" src="https://img.shields.io/github/languages/top/techwithanirudh/shadcn-portfolio?style=for-the-badge&labelColor=000">
-  <a aria-label="License" href="https://github.com/techwithanirudh/shadcn-portfolio/blob/main/LICENSE">
-    <img alt="" src="https://img.shields.io/github/license/techwithanirudh/shadcn-portfolio?style=for-the-badge&labelColor=000">
-  </a>
-</p>
+## 🚀 Tech Stack
 
-## 📋 Table of Contents
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Shadcn/ui
+- **Animations:** Framer Motion
+- **Content:** MDX
+- **Icons:** Lucide React
 
-1. 🤖 [Introduction](#introduction)
-2. 🚀 [Tech Stack](#tech-stack)
-3. ✨ [Features](#features)
-4. 📚 [Getting Started](#getting-started)
-5. ❤️ [Credits](#credits)
+## ✨ Key Features
 
-## <a name="introduction">🤖 Introduction</a>
+### 1. Modern Blog System
+- MDX support for rich content
+- Syntax highlighting for code blocks
+- Responsive images with blur placeholders
+- Table of contents generation
+- Reading time estimation
 
-This is a portfolio template built using Next.JS, Framer Motion and Shadcn/UI.
+![Blog Post Example](/images/projects/portfolio/blog.jpg)
+*A sample blog post showcasing MDX features and syntax highlighting*
 
-## <a name="tech-stack">🚀 Tech Stack</a>
+### 2. Interactive UI Components
+- Smooth page transitions
+- Scroll-triggered animations
+- Interactive project cards
+- Dynamic gradient effects
+- Responsive navigation
 
-- Next.js
-- shadcn/ui
-- Framer Motion
-- Tailwind CSS
-hey
+![Interactive UI Elements](/images/projects/portfolio/interactions.mp4)
+*Interactive UI elements with smooth animations and transitions*
 
-## <a name="features">✨ Features</a>
+### 3. Project Showcase
+- Detailed project pages
+- Technology stack tags
+- Live demo links
+- GitHub repository integration
+- Responsive image galleries
 
-- ⚡️ Next.js 14 with App Router
-- 📝 Blog
-- 🎨 Tailwind CSS - for styling
-- 🌈 Shadcn UI - accessible UI components
-- 📱 Responsive design
-- 🌗 Light / Dark mode
-- 📈 SEO optimized with meta tags
-- 📊 Sentry (setup required)
-- 🎨 Animations - using Framer Motion
-- 🔨 Husky & Lint Staged - lint and format code before committing
-- 💄 Prettier - code formatting
-- 📞 Contact form (setup required)
-- 🛡️ Cloudflare Turnstile (setup required)
+![Project Showcase](/images/projects/portfolio/projects.jpg)
+*Interactive project cards with hover effects and detailed information*
 
-## <a name="getting-started">📚 Getting Started</a>
+## 📦 Project Structure
 
-Please refer to the [getting started guide](./GETTING_STARTED.md) for information on how to configure and run the
-portfolio template.
+```
+daniel-portfolio/
+├── app/              # Next.js app directory
+├── components/       # React components
+├── content/         # MDX content
+│   ├── blog/       # Blog posts
+│   └── projects/   # Project showcases
+├── lib/            # Utility functions
+├── public/         # Static assets
+└── styles/         # Global styles
+```
 
-## <a name="credits">❤️ Credits</a>
+## 🛠️ Development Setup
 
-This project wouldn’t be possible without the following open-source projects:
+### Prerequisites
+- Node.js 18+
+- pnpm package manager
 
-- MDX Rendering and Logic from [fumadocs](https://github.com/fuma-nama/fumadocs)
-- MDX Data from [content-collections](https://www.content-collections.dev/)
-- UI from [shadcn/ui](https://ui.shadcn.com/)
-- Smooth Scrolling from [Lenis](https://github.com/darkroomengineering/lenis)
-- Turnstile from [react-turnstile](https://github.com/marsidev/react-turnstile)
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/daniel1lima/daniel-portfolio.git
 
-This project has been inspired by the following websites:
+# Install dependencies
+pnpm install
 
-- [honghong.me](https://honghong.me/)
-- [cuberto.com](https://cuberto.com/)
-- [fuma-nama.vercel.app](https://fuma-nama.vercel.app/)
-- [fumadocs.vercel.app](https://fumadocs.vercel.app/)
-- [dennissnellenberg.com](https://dennissnellenberg.com/)
-- [bychristinakosik.com](https://www.bychristinakosik.com/)
-- [danmachado.com](https://www.danmachado.com/)
-- [ui.aceternity.com](https://ui.aceternity.com/)
-- [blog.olivierlarose.com](https://blog.olivierlarose.com/)
-- [props.studiolumio.com](https://props.studiolumio.com/)
-- [dennissnellenberg.com](https://dennissnellenberg.com/)
-- [davidhaz.com](https://davidhaz.com/)
-- [fellipeutaka.vercel.app](https://fellipeutaka.vercel.app/)
-- [a-bd.me](https://www.a-bd.me/)
-- [luge.cool](https://luge.cool/)
-- [nahelmoussi.com](https://nahelmoussi.com/)
-- [boyntonyards.com](https://boyntonyards.com/)
-- [ped.ro](https://ped.ro/)
-- [leerob.io](https://leerob.io/)
-- [portfolio hero challenge](https://x.com/thereal_apk/status/1829874339254321290)
-- [minimal homepage exploration](https://x.com/FonsMans/status/1829510586843152791)
-- [suxmaiya.framer.website](https://x.com/SumaiyaSsa/status/1828451225714471209)
-- [jrhu.me](https://jrhu.me/)
-- [github.com/ismamz/next-transition-router](https://github.com/ismamz/next-transition-router)
-- [jorisbrianti.fr](https://jorisbrianti.fr/)
-- [athos-dark.framer.ai](https://athos-dark.framer.ai/)
+# Start development server
+pnpm dev
+```
 
-and more
+## ⚡ Performance Optimizations
+
+- Image optimization with Next.js
+- MDX content caching
+- Code splitting
+- Lazy loading components
+- Font optimization
+- Static page generation
+
+## 🔮 Future Enhancements
+
+- Blog search functionality
+- Project filtering system
+- Newsletter integration
+- Comment system
+- Analytics dashboard
+- RSS feed support
+- Internationalization
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+This project has been inspired by various modern portfolio websites and incorporates best practices from the web development community. Special thanks to all the open-source projects and developers who have contributed to the tools and libraries used in this project.
 
 #
