@@ -5,4 +5,5 @@ export interface Experience {
   company: string;
   duration: string;
   description?: string;
+  images?: string[];
 }
