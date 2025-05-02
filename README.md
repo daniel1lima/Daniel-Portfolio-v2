@@ -21,7 +21,7 @@ A modern, responsive portfolio website showcasing projects and thoughts through 
 - Table of contents generation
 - Reading time estimation
 
-![Blog Post Example](/images/projects/portfolio/blog.jpg)
+![Blog Post Example](/public/images/projects/portfolio/blog.jpg)
 *A sample blog post showcasing MDX features and syntax highlighting*
 
 ### 2. Interactive UI Components
@@ -31,7 +31,7 @@ A modern, responsive portfolio website showcasing projects and thoughts through 
 - Dynamic gradient effects
 - Responsive navigation
 
-![Interactive UI Elements](/images/projects/portfolio/interactions.mp4)
+![Interactive UI Elements](/public/images/projects/portfolio/interactions.mp4)
 *Interactive UI elements with smooth animations and transitions*
 
 ### 3. Project Showcase
@@ -41,7 +41,7 @@ A modern, responsive portfolio website showcasing projects and thoughts through 
 - GitHub repository integration
 - Responsive image galleries
 
-![Project Showcase](/images/projects/portfolio/projects.jpg)
+![Project Showcase](/public/images/projects/portfolio/projects.jpg)
 *Interactive project cards with hover effects and detailed information*
 
 ## 📦 Project Structure
