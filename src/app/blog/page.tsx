@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowUpRightIcon } from 'lucide-react'
 import { getAllPosts } from '@/lib/blog'
@@ -76,9 +77,9 @@ export default async function BlogPage({
                       variant="ghost" 
                       className="mt-4 self-start group-hover:text-purple-600"
                     >
-                      <a href={`/blog/${post.slug}`}>
+                      <Link href={`/blog/${post.slug}`}>
                         Read more <ArrowUpRightIcon className="ml-2 size-4" />
-                      </a>
+                      </Link>
                     </Button>
                   </div>
                 </article>
@@ -93,7 +94,7 @@ export default async function BlogPage({
                     variant={page === currentPage ? "default" : "outline"}
                     asChild
                   >
-                    <a href={`/blog?page=${page}`}>{page}</a>
+                    <Link href={`/blog?page=${page}`}>{page}</Link>
                   </Button>
                 ))}
               </div>
