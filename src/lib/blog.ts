@@ -13,8 +13,9 @@ export interface BlogPost {
   tags: string[]
 }
 
-export async function getAllPosts(): Promise<BlogPost[]> {
+export async function getAllPosts(published: boolean = false): Promise<BlogPost[]> {
   const posts = await prisma.post.findMany({
+    where: published ? { published: true } : {},
     orderBy: {
       createdAt: 'desc',
     },
