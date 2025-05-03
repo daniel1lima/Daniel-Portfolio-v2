@@ -1,9 +1,14 @@
 import { PrismaClient } from '@prisma/client'
 
 const prismaClientSingleton = () => {
-  return new PrismaClient({
-    log: ['query', 'error', 'warn'],
-  })
+  try {
+    return new PrismaClient({
+      log: ['query', 'error', 'warn'],
+    })
+  } catch (error) {
+    console.error('Failed to initialize Prisma client:', error)
+    throw error
+  }
 }
 
 type PrismaClientSingleton = ReturnType<typeof prismaClientSingleton>

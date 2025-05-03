@@ -9,5 +9,6 @@ export const metadata: Metadata = {
 
 export default async function BlogAdminPage() {
   const posts = await getAllPosts()
+  console.log(posts.map((post) => post.slug))
   return <BlogAdminClient initialPosts={posts} />
 } 
