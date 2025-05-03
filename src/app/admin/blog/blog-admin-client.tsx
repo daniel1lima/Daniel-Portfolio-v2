@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -10,15 +11,22 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { DeletePostDialog } from '@/components/blog/delete-post-dialog'
 import type { BlogPost } from '@/lib/blog'
 import Link from 'next/link'
+
 interface BlogAdminClientProps {
   initialPosts: BlogPost[]
 }
 
 export default function BlogAdminClient({ initialPosts }: BlogAdminClientProps) {
-  const [posts] = useState(initialPosts)
+  const router = useRouter()
+  const [posts] = React.useState(initialPosts)
 
   // Get unique tags for filter
   const tags = Array.from(new Set(posts.flatMap(post => post.tags)))
+
+  // Add effect to refresh data when posts change
+  React.useEffect(() => {
+    router.refresh()
+  }, [router])
 
   return (
     <section className="relative w-full min-h-screen py-20 px-4 md:px-6">

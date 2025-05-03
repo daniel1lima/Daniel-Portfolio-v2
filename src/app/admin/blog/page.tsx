@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description: 'Manage your blog posts',
 }
 
+// Make the page dynamic to prevent caching
+export const dynamic = 'force-dynamic'
+
 export default async function BlogAdminPage() {
   const posts = await getAllPosts()
   console.log(posts.map((post) => post.slug))
