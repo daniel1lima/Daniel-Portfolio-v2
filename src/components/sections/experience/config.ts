@@ -1,9 +1,20 @@
 import { Experience } from '@/types/experience';
 
 const experiences: Experience[] = [
+  // {
+  //   name: 'Spade Clipping Software Engineer',
+  //   duration: 'May 2025 - Aug 2025',
+  //   company: 'Spade Group',
+  //   description:
+  //     'Developed a full-stack application for the Spade Group, using React.js, Node.js, and MongoDB. The application allows users to create and share clippers with others.',
+  //   images: [
+  //     '/images/experiences/EML-1.jpeg',
+  //     '/images/experiences/EML-2.jpeg',
+  //   ]
+  // },
   {
     name: 'Emerging Media Lab Software Developer',
-    duration: 'May 2024 - Nov 2024',
+    duration: 'May 2025 - Aug 2025',
     company: 'Emerging Media Lab - UBC',
     description:
       'Developed emerging media applications, specifically VR applications for subject matter experts using Unreal Engine 5.5, C++, WebSocket programming, and AI interfacing. Created immersive virtual reality experiences that enable domain experts to interact with complex data and systems in an intuitive 3D environment.',

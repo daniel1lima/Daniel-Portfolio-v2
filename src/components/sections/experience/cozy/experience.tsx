@@ -123,28 +123,37 @@ function Experiences() {
 
                   {/* Images Container */}
                   <AnimatePresence>
-                    {hoveredIndex === index && experience.images && (
-                      <motion.div
-                        variants={imageVariants}
-                        initial="hidden"
-                        animate="visible"
-                        exit="exit"
-                        className="absolute right-0 top-0 flex gap-4"
+                    { experience.images && (
+                      <div
+                        className="absolute right-0 top-0 flex gap-4 visible"
                       >
                         {experience.images.map((image, imageIndex) => (
-                          <motion.div
-                            key={`image_${imageIndex}`}
-                            className="relative h-48 w-48 overflow-hidden rounded-lg shadow-lg"
-                          >
+                                                      <motion.div
+                              key={`image_${imageIndex}`}
+                              initial={{ opacity: 0, x: 50 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              exit={{ opacity: 0, x: 50 }}
+                              transition={{ 
+                                duration: 0.6, 
+                                delay: imageIndex * 0.1,
+                                ease: "easeOut"
+                              }}
+                              whileHover={{ 
+                                scale: 1.10,
+                                zIndex: 10,
+                                transition: { duration: 0.1 }
+                              }}
+                              className="relative h-56 w-56 overflow-hidden rounded-lg shadow-lg hover:z-10 transition-all duration-200"
+                            >
                             <Image
                               src={image}
                               alt={`${experience.company} experience image ${imageIndex + 1}`}
                               fill
-                              className="object-cover"
+                              className="object-cover "
                             />
                           </motion.div>
                         ))}
-                      </motion.div>
+                      </div>
                     )}
                   </AnimatePresence>
                 </motion.div>
