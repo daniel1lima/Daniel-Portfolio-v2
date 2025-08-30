@@ -36,7 +36,6 @@
     "@react-email/tailwind": "^0.0.19",
     "@studio-freight/react-lenis": "^0.0.47",
     "@tailwindcss/typography": "^0.5.13",
-    "@tszhong0411/ui": "^0.0.35",
     "@types/mdx": "^2.0.13",
     "@vercel/analytics": "^1.4.1",
     "class-variance-authority": "^0.7.0",

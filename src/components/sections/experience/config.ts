@@ -1,15 +1,17 @@
 import { Experience } from '@/types/experience';
 
 const experiences: Experience[] = [
-  // {
-  //   name: 'Emerging Media Lab Software Developer Worklearn',
-  //   duration: 'May 2024 - Nov 2024',
-  //   company: 'Emerging Media Lab - UBC',
-  //   description:
-  //     '',
-  //   images: [
-  //   ]
-  // },
+  {
+    name: 'Emerging Media Lab Software Developer',
+    duration: 'May 2024 - Nov 2024',
+    company: 'Emerging Media Lab - UBC',
+    description:
+      'Developed emerging media applications, specifically VR applications for subject matter experts using Unreal Engine 5.5, C++, WebSocket programming, and AI interfacing. Created immersive virtual reality experiences that enable domain experts to interact with complex data and systems in an intuitive 3D environment.',
+    images: [
+      '/images/experiences/EML-1.jpeg',
+      '/images/experiences/EML-2.jpeg',
+    ]
+  },
   {
     name: 'Software Engineer',
     duration: 'May 2024 - Nov 2024',
