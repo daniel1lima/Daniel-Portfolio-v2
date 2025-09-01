@@ -1,7 +1,7 @@
 'use client'
 
-import { Link } from '@tszhong0411/ui'
-import { LinkIcon } from 'lucide-react'
+
+import { Link, LinkIcon } from 'lucide-react'
 
 import { SOCIAL_LINKS } from '@/config/links'
 
