@@ -1,8 +1,8 @@
 ---
-title: ClipMore
-description: A Discord bot that tracks social media post engagements and manages campaign payouts based on view counts. Coupled with a react dashboard for efficient campaign management and client facing tracking.
+title: Spade Clipping (Formerly ClipMore)
+description: A Discord bot + web app that tracks social media post engagements and manages campaign payouts based on view counts. Coupled with a react dashboard for efficient campaign management and client facing tracking.
 date: 2025-03-21
-website: https://discord.gg/NSYvejc233
+website: https://spadeclipping.com
 github: https://discord.gg/NSYvejc233
 tags:
   - label: Express
@@ -13,9 +13,9 @@ tags:
   - label: React
 ---
 
-# ClipMore
+# Spade Clipping
 
-ClipMore is an innovative Discord bot designed to streamline social media campaign management and creator compensation. The bot allows users to submit social media posts, automatically tracks engagement metrics across platforms, and provides campaign managers with tools to efficiently manage payouts based on view counts.
+Spade clipping is an innovative Discord bot + web app designed to streamline social media campaign management and creator compensation. The app allows users to submit social media posts, automatically tracks engagement metrics across platforms, and provides campaign managers with tools to efficiently manage payouts based on view counts.
 
 ## Project Overview
 
@@ -32,6 +32,8 @@ ClipMore is an innovative Discord bot designed to streamline social media campai
     - Automated engagement tracking across platforms
     - Real-time view count monitoring
     - Post submission and verification
+    - Authentication and account management
+    - Intercom ticketing
     - Multi-platform support
   </div>
   
@@ -124,69 +126,10 @@ React with TypeScript
 }
 ```
 
-## Project Structure
-
-```bash
-clipmore/
-├── bot/                # Discord bot implementation
-├── server/            # Express backend
-├── client/            # React frontend
-├── shared/            # Shared types and utilities
-├── config/            # Configuration files
-└── tests/             # Test suites
-```
-
 ## Performance Optimizations
 
-- Efficient database queries for engagement tracking
+- Write through cache policy for data consistency
 - Caching for frequently accessed metrics
 - Optimized Discord bot response times
-- Efficient social media API integration
+- Worker queues for parallel processing
 - Rate limiting for API endpoints
-
-## Development Setup
-
-### Prerequisites
-- Node.js
-- PostgreSQL
-- Discord Bot Token
-- Social Media API Keys
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/clipmore.git
-cd clipmore
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your configuration
-
-# Start development servers
-npm run dev
-```
-
-## Future Enhancements
-
-### Platform Integration
-- Additional social media platforms
-- Enhanced analytics capabilities
-- Automated payout system integration
-
-### Bot Features
-- Advanced command system
-- Custom notification rules
-- Enhanced moderation tools
-
-### Dashboard Improvements
-- Advanced analytics visualization
-- Custom report builder
-- Enhanced campaign management tools
-
-### Security
-- Enhanced authentication system
-- API key management
-- Audit logging 
